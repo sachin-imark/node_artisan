@@ -1,0 +1,27 @@
+{
+  "name": "node_artisan",
+  "version": "1.0.0",
+  "description": "This is start demo",
+  "main": "index.js",
+  "dependencies": {
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "npm": "^6.5.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.9"
+  },
+  "scripts": {
+    "test": "demorun"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/sachin-imark/node_artisan.git"
+  },
+  "author": "Sachin Rana",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/sachin-imark/node_artisan/issues"
+  },
+  "homepage": "https://gitlab.com/sachin-imark/node_artisan#readme"
+}
