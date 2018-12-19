@@ -16,7 +16,7 @@ app.get('/', function(req, res) {
 
 // about page 
 app.get('/about', function(req, res) {
-	var tagline = "Any code of your own that you haven't looked at for";
+	var tagline = "Any code of your own that you test";
     res.render('pages/about',  {
         tagline: tagline
     });
