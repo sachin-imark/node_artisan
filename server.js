@@ -1,5 +1,8 @@
 var express = require('express');
+var path = require('path');
 var app = express();
+
+app.use('/static', express.static('public'))
 
 var bodyParser = require("body-parser");
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -11,15 +14,18 @@ app.set('view engine', 'ejs');
 
 // index page 
 app.get('/', function(req, res) {
-    res.render('pages/index');
+    res.render('pages/index', {page:'Home'});
 });
 
 // about page 
 app.get('/about', function(req, res) {
-	var tagline = "Any code of your own that you test";
-    res.render('pages/about',  {
-        tagline: tagline
-    });
+    var tagline = "Any code ";
+    res.render('pages/about',  { page: "About", tagline: tagline});
+});
+
+// contact page 
+app.get('/contact', function(req, res) {
+    res.render('pages/contact',  {page:'Contact'});
 });
 
 // app.get('/', function (req, res) {
