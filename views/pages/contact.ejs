@@ -11,15 +11,20 @@
 <div class="container-fluid bg-3 text-center">    
   <h3><%= page %></h3><br>
   <div class="row">
+    <div class="col-sm-4"> 
+      <p></p>
+    </div>
     <div class="col-sm-4">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      
+      <form action="/submit_contact/" method="post">
+        <p>Name   : <input type="text" name="name"></p>
+        <p>Email  : <input type="email" name="email"></p>
+        <p>Mobile : <input type="text" name="phone"></p>
+        <p><input type="submit" name="Submit"></p>
+      </form>
     </div>
+    
     <div class="col-sm-4"> 
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-    </div>
-    <div class="col-sm-4"> 
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <p></p>
     </div>
   </div>
 </div>

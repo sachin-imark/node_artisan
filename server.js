@@ -28,6 +28,12 @@ app.get('/contact', function(req, res) {
     res.render('pages/contact',  {page:'Contact'});
 });
 
+app.post('/submit_contact', function (req, res) {
+	// var name = req.body.name;
+    var data = [req.body.name, req.body.email, req.body.phone];
+    res.send(data + ' Submitted Successfully!');
+});
+
 // app.get('/', function (req, res) {
 //     res.sendFile(__dirname + '/index.html');
 // });
