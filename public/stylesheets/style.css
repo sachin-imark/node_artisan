@@ -22,3 +22,26 @@
   .active>a {
     color: #1abc9c !important;;
   }
+
+  /*satrt css for contact from*/
+  .form-background{
+       background-color:  #D3D3D3;
+       padding: 30px;
+      
+  }
+  .border-radius{
+        border-radius: 20px;
+  }
+  .button-width{
+        width: 40%;
+  }
+  .border-right{
+    border-right: 3px solid white;
+  }
+  .font-weight{
+    font-weight: 600;
+  }
+  .content-background{
+       background-color:  #D3D3D3;
+  }
+  /*End css for contact form*/

@@ -8,21 +8,22 @@
 <body>
 <% include ../partials/header %>
 
-<div class="container-fluid bg-3 text-center">    
-  <h3><%= page %></h3><br>
+<div class="container-fluid bg-3 text-center">  
+  <h3><%= page %></h3><br>  
   <div class="row">
     <div class="col-sm-4"> 
       <p></p>
     </div>
-    <div class="col-sm-4">
+    <div class="col-sm-4 form-background border-radius border-right">
       <form action="/submit_contact/" method="post">
-        <p>Name   : <input type="text" name="name"></p>
-        <p>Email  : <input type="email" name="email"></p>
-        <p>Mobile : <input type="text" name="phone"></p>
-        <p><input type="submit" name="Submit"></p>
+        <!-- <legend class="font-weight">Contact Form</legend> -->
+        <input type="text" class="form-control border-radius" name="name" placeholder="Name" required><br>
+        <input type="email" class="form-control border-radius" name="email" placeholder="E-mail" required><br>
+        <input type="text" class="form-control border-radius" name="phone" placeholder="Mobile" required><br>
+        <textarea class="form-control border-radius" required>Message</textarea></p><br>
+        <input type="submit" class="btn btn-primary border-radius button-width" name="Submit">
       </form>
     </div>
-    
     <div class="col-sm-4"> 
       <p></p>
     </div>
